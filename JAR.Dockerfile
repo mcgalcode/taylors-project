@@ -1,0 +1,12 @@
+FROM python:3.9.1
+
+
+ENV PICKLE_DIR=/workspace
+RUN mkdir $PICKLE_DIR
+WORKDIR $PICKLE_DIR
+
+COPY . .
+RUN pwd
+
+
+CMD 
